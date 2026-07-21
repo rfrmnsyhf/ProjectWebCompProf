@@ -1,0 +1,50 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect, useState, useCallback } from "react";
+import { useLocation } from "react-router-dom";
+import Layout from "@/components/layout/Layout";
+import LoadingScreen from "@/components/common/LoadingScreen";
+import Home from "@/pages/Home";
+import About from "@/pages/About";
+import Services from "@/pages/Services";
+import Industries from "@/pages/Industries";
+import Contact from "@/pages/Contact";
+import NotFound from "@/pages/NotFound";
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+};
+
+function App() {
+  const [loading, setLoading] = useState(true);
+
+  const handleLoadingComplete = useCallback(() => {
+    setLoading(false);
+  }, []);
+
+  return (
+    <BrowserRouter>
+      <LoadingScreen onComplete={handleLoadingComplete} />
+      {!loading && (
+        <>
+          <ScrollToTop />
+          <Routes>
+            <Route element={<Layout />}>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/industries" element={<Industries />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<NotFound />} />
+            </Route>
+          </Routes>
+        </>
+      )}
+    </BrowserRouter>
+  );
+}
+
+export default App;
