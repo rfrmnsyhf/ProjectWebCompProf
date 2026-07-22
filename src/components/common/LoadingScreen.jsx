@@ -62,7 +62,7 @@ const LoadingScreen = ({ onComplete }) => {
                   repeat: Infinity,
                   ease: "linear",
                 }}
-                className="h-full w-1/2 bg-gradient-to-r from-transparent via-accent to-transparent"
+                className="h-full w-1/2 bg-linear-to-r from-transparent via-accent to-transparent"
               />
             </motion.div>
           </div>

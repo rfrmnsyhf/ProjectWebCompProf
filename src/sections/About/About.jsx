@@ -56,8 +56,10 @@ const About = () => {
                 <div>
                   <h4 className="mb-1 font-semibold text-primary">Visi</h4>
                   <p className="text-sm text-gray">
-                    Menjadi perusahaan jasa kepelabuhanan dan pelayaran nasional
-                    kelas dunia dengan standar pelayanan internasional.
+                    Menjadi perusahaan penyedia jasa agen pelayaran dan
+                    kepelabuhanan independen tingkat nasional berkelas dunia
+                    yang selalu memberikan pelayanan terbaik sesuai standar
+                    kualitas global.
                   </p>
                 </div>
               </div>
@@ -68,8 +70,9 @@ const About = () => {
                 <div>
                   <h4 className="mb-1 font-semibold text-primary">Misi</h4>
                   <p className="text-sm text-gray">
-                    Membangun hubungan bisnis berdasarkan kepercayaan, memberikan
-                    nilai tambah, dan menyelesaikan pekerjaan tepat waktu.
+                    Membangun hubungan bisnis berdasarkan kepercayaan, rasa
+                    hormat, dan etika bisnis. Memberikan layanan bernilai
+                    tambah demi kepuasan pelanggan.
                   </p>
                 </div>
               </div>

@@ -24,7 +24,7 @@ const testimonials = [
   },
 ];
 
-const Testimonials = () => {
+const ServiceTestimonials = () => {
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(1);
   const [isPaused, setIsPaused] = useState(false);
@@ -48,7 +48,7 @@ const Testimonials = () => {
   return (
     <section className="bg-white py-24">
       <Container>
-        <div className="mb-16 text-center">
+        <div className="mb-12 text-center">
           <motion.span
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -56,7 +56,7 @@ const Testimonials = () => {
             transition={{ duration: 0.5 }}
             className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-secondary"
           >
-            Testimoni
+            Testimoni Klien
           </motion.span>
           <motion.h2
             initial={{ opacity: 0, y: 10 }}
@@ -65,8 +65,7 @@ const Testimonials = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mb-4 text-3xl font-bold text-primary md:text-4xl"
           >
-            Kata Mereka Tentang{" "}
-            <span className="text-secondary">CBSA</span>
+            Dipercaya oleh <span className="text-secondary">Armada Internasional</span>
           </motion.h2>
         </div>
 
@@ -85,7 +84,7 @@ const Testimonials = () => {
                 transition={{ duration: 0.4, ease: "easeInOut" }}
               >
                 <Quote className="mb-6 h-10 w-10 text-secondary/30" />
-                <p className="mb-8 text-lg leading-relaxed italic text-gray md:text-xl">
+                <p className="mb-8 text-lg leading-relaxed italic text-muted-foreground md:text-xl">
                   &ldquo;{t.quote}&rdquo;
                 </p>
                 <div className="flex items-center gap-4">
@@ -97,7 +96,7 @@ const Testimonials = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-primary">{t.author}</p>
-                    <p className="text-sm text-gray">{t.company}</p>
+                    <p className="text-sm text-muted-foreground">{t.company}</p>
                   </div>
                 </div>
               </motion.div>
@@ -107,14 +106,14 @@ const Testimonials = () => {
           {/* Navigation Arrows */}
           <button
             onClick={() => paginate(-1)}
-            className="absolute -left-4 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white text-gray shadow-md transition-all hover:border-secondary hover:text-secondary hover:shadow-lg md:-left-5"
+            className="absolute -left-4 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white text-muted-foreground shadow-md transition-all hover:border-secondary hover:text-secondary hover:shadow-lg md:-left-5"
             aria-label="Previous testimonial"
           >
             <ChevronLeft className="h-5 w-5" />
           </button>
           <button
             onClick={() => paginate(1)}
-            className="absolute -right-4 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white text-gray shadow-md transition-all hover:border-secondary hover:text-secondary hover:shadow-lg md:-right-5"
+            className="absolute -right-4 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white text-muted-foreground shadow-md transition-all hover:border-secondary hover:text-secondary hover:shadow-lg md:-right-5"
             aria-label="Next testimonial"
           >
             <ChevronRight className="h-5 w-5" />
@@ -144,4 +143,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default ServiceTestimonials;

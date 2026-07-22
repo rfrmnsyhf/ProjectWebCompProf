@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Map, BarChart3, Warehouse, Info, Compass } from "lucide-react";
 import Container from "@/components/layout/Container";
+import heroBg from "@/assets/images/hero.png";
 
 const knowledgeItems = [
   {
@@ -37,7 +38,10 @@ const SharingLocalKnowledge = () => {
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0 bg-[url('/images/hero.png')] bg-cover bg-center" />
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroBg})` }}
+        />
       </div>
 
       <Container className="relative z-10">

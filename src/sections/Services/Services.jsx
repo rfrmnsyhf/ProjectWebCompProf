@@ -62,7 +62,7 @@ const Services = () => {
                 Selengkapnya
                 <ArrowRight className="h-4 w-4" />
               </div>
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary to-accent opacity-0 transition-opacity group-hover:opacity-100" />
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-secondary to-accent opacity-0 transition-opacity group-hover:opacity-100" />
             </motion.div>
           ))}
         </div>

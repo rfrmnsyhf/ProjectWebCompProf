@@ -7,10 +7,10 @@ import logo from "@/assets/images/LOGO.png";
 
 const services = [
   "Ship Agency",
-  "Bunker Fuel",
-  "Ship Supply",
-  "Weather Routing",
-  "Maritime Security",
+  "Ship Chandler & Bunkering",
+  "Logistics & Customs Clearance",
+  "Offshore Support",
+  "Husbandry Services",
   "Crew Manning",
 ];
 
@@ -18,7 +18,7 @@ const faqs = [
   {
     question: "Apa saja layanan utama CBSA?",
     answer:
-      "Kami menyediakan ship agency, bunker fuel, ship supply, weather routing, maritime security, dan crew manning.",
+      "Kami menyediakan ship agency, ship chandler & bunkering, logistics & customs clearance, offshore support, husbandry services, dan crew manning.",
   },
   {
     question: "Di mana lokasi operasional CBSA?",
@@ -33,17 +33,17 @@ const faqs = [
 ];
 
 const socialLinks = [
-  { icon: FaInstagram, href: "#", label: "Instagram" },
-  { icon: FaFacebookF, href: "#", label: "Facebook" },
-  { icon: FaLinkedinIn, href: "#", label: "LinkedIn" },
-  { icon: FaYoutube, href: "#", label: "YouTube" },
+  { icon: FaInstagram, href: "https://instagram.com/", label: "Instagram" },
+  { icon: FaFacebookF, href: "https://facebook.com/", label: "Facebook" },
+  { icon: FaLinkedinIn, href: "https://linkedin.com/", label: "LinkedIn" },
+  { icon: FaYoutube, href: "https://youtube.com/", label: "YouTube" },
 ];
 
 const Footer = () => {
   return (
     <footer className="bg-primary text-white">
       <Container className="py-16">
-        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-6">
 
           {/* Brand */}
           <div className="lg:col-span-2">
@@ -150,6 +150,33 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Bantuan Cepat */}
+          <div>
+            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider">
+              Bantuan Cepat
+            </h4>
+            <ul className="space-y-3">
+              <li>
+                <a
+                  href={`https://wa.me/${company.phoneWhatsApp}?text=Halo%20CBSA%2C%20saya%20ingin%20konsultasi%20tentang%20layanan%20maritim.`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-slate-400 transition-colors hover:text-accent"
+                >
+                  Chat WhatsApp
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`mailto:${company.email}`}
+                  className="text-sm text-slate-400 transition-colors hover:text-accent"
+                >
+                  Kirim Email
+                </a>
+              </li>
+            </ul>
+          </div>
+
         </div>
 
         {/* Bottom Bar */}
@@ -159,10 +186,10 @@ const Footer = () => {
             reserved.
           </p>
           <div className="flex gap-6 text-sm text-slate-500">
-            <a href="#" className="transition-colors hover:text-accent">
+            <a href="#" onClick={(e) => e.preventDefault()} className="transition-colors hover:text-accent">
               Kebijakan Privasi
             </a>
-            <a href="#" className="transition-colors hover:text-accent">
+            <a href="#" onClick={(e) => e.preventDefault()} className="transition-colors hover:text-accent">
               Syarat & Ketentuan
             </a>
           </div>

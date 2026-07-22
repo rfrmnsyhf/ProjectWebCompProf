@@ -82,6 +82,8 @@ const Navbar = () => {
         {/* Mobile Toggle */}
         <button
           onClick={toggleMenu}
+          aria-label="Toggle navigation menu"
+          aria-expanded={isOpen}
           className={`inline-flex items-center justify-center rounded-md p-2 transition-colors duration-300 md:hidden ${
             scrolled
               ? "text-white hover:bg-white/10"

@@ -79,8 +79,10 @@ const Philosophy = () => {
                   <h4 className="font-semibold text-primary">Visi</h4>
                 </div>
                 <p className="text-gray leading-relaxed">
-                  Menjadi perusahaan jasa kepelabuhanan dan pelayaran nasional
-                  kelas dunia dengan standar pelayanan internasional.
+                  Menjadi perusahaan penyedia jasa agen pelayaran dan
+                  kepelabuhanan independen tingkat nasional berkelas dunia
+                  yang selalu memberikan pelayanan terbaik sesuai standar
+                  kualitas global.
                 </p>
               </motion.div>
 
@@ -100,23 +102,23 @@ const Philosophy = () => {
                 <ul className="space-y-2 text-gray">
                   <li className="flex items-start gap-2">
                     <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-secondary" />
-                    Membangun hubungan bisnis berdasarkan kepercayaan
+                    Membangun hubungan bisnis berasaskan kepercayaan, rasa hormat, dan etika bisnis
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-secondary" />
-                    Memberikan nilai tambah kepada pelanggan
+                    Menyediakan layanan bernilai tambah demi kepuasan pelanggan
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-secondary" />
-                    Menyelesaikan pekerjaan tepat waktu
+                    Menyelesaikan pekerjaan tepat waktu dan efisien
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-secondary" />
-                    Menjaga keselamatan kerja
+                    Memastikan lingkungan kerja yang aman sesuai standar K3/HSE
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-secondary" />
-                    Memastikan setiap pelayaran berjalan aman dan lancar
+                    Membantu memastikan setiap pelayaran berjalan aman dan lancar
                   </li>
                 </ul>
               </motion.div>
