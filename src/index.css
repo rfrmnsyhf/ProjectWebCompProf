@@ -28,10 +28,14 @@
     --color-destructive: var(--destructive);
     --color-accent-foreground: var(--accent-foreground);
     --color-accent: var(--accent);
+    --color-maritime: #0B3A63;
+    --color-maritime-hover: #0F4C81;
     --color-muted-foreground: var(--muted-foreground);
     --color-muted: var(--muted);
     --color-secondary-foreground: var(--secondary-foreground);
     --color-secondary: var(--secondary);
+    --color-whatsapp: #25D366;
+    --color-whatsapp-hover: #1EBE5D;
     --color-primary-foreground: var(--primary-foreground);
     --color-primary: var(--primary);
     --color-popover-foreground: var(--popover-foreground);
@@ -56,7 +60,7 @@
     --card-foreground: oklch(0.145 0.017 285.823);
     --popover: oklch(1 0 0);
     --popover-foreground: oklch(0.145 0.017 285.823);
-    --primary: oklch(0.145 0.017 285.823);
+    --primary: oklch(21.365% 0.03328 283.223);
     --primary-foreground: oklch(1 0 0);
     --secondary: oklch(0.546 0.245 262.881);
     --secondary-foreground: oklch(1 0 0);

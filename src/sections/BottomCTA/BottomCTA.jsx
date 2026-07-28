@@ -42,17 +42,20 @@ const BottomCTA = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button size="lg" className="group gap-2">
+              <Button
+                size="lg"
+                className="group gap-2 bg-whatsapp text-white hover:bg-whatsapp-hover"
+              >
                 <Phone className="h-4 w-4" />
                 Chat WhatsApp
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-2" />
               </Button>
             </a>
             <a href={`mailto:${company.email}`}>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white/30 text-white hover:bg-white/10 hover:text-white"
+                className="border-white/30 text-black hover:bg-black/10 hover:text-white"
               >
                 Kirim Email
               </Button>

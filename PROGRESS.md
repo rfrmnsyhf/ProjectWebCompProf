@@ -23,7 +23,7 @@
 | 9 | Bug Fix | SharingLocalKnowledge `hero.png` 404 — import dari assets | ✅ Selesai |
 | 10 | Bug Fix | App.jsx — tambah route `/portfolio` | ✅ Selesai |
 | 11 | Bug Fix | Medical Evacuation icon `Package` → `HeartPulse` | ✅ Selesai |
-| 12 | Bug Fix | `aspect-4/3` → `aspect-[4/3]` untuk Tailwind v4 | ✅ Selesai |
+| 12 | Bug Fix | `aspect-4/3` → `aspect-4/3` untuk Tailwind v4 | ✅ Selesai |
 | 13 | Cleanup | Hapus `theme.js` (dead code), `Hero.jsx` (dead component) | ✅ Selesai |
 | 14 | Cleanup | Hapus 5 unused images (`home2.jpg`, `home3.jpg`, `home4.jpg`, `LOGOserap.png`, `aboutImg_serap.jpg`) | ✅ Selesai |
 | 15 | Cleanup | Hapus import `@fontsource-variable/inter` (ga kepake, Manrope yang dipake) | ✅ Selesai |
@@ -191,7 +191,7 @@ PageHero ("Kontak Kami")
 |-------|-----------|
 | `text-gray` | Harus define `--color-gray` di `@theme inline` (sudah dilakukan) |
 | `bg-cta` / `bg-cta-hover` | Custom color variables (sudah ditambah di `index.css`) |
-| `aspect-[4/3]` | Pakai arbitrary value, bukan `aspect-4/3` |
+| `aspect-4/3` | Pakai arbitrary value, bukan `aspect-4/3` |
 | `bg-linear-to-*` | Canonical v4 class (bukan `bg-gradient-to-*`) |
 | `z-[100]` | Pakai arbitrary value untuk z-index non-standard |
 

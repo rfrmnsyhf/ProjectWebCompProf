@@ -104,7 +104,7 @@ const VesselTypes = () => {
               className="group relative overflow-hidden rounded-2xl"
             >
               {/* Image */}
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="aspect-4/3 overflow-hidden">
                 <img
                   src={vessel.image}
                   alt={vessel.title}

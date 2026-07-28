@@ -52,22 +52,15 @@ const FounderStatement = () => {
               <Quote className="mx-auto mb-6 h-10 w-10 text-secondary/30" />
             </motion.div>
 
-            <blockquote
-              ref={blockquoteRef}
-              className="mb-8 text-lg font-medium leading-relaxed text-primary md:text-2xl"
+            <motion.blockquote
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="mx-auto mb-8 max-w-3xl text-left text-lg font-medium leading-relaxed text-primary md:text-justify md:text-2xl"
             >
-              {words.map((word, i) => (
-                <motion.span
-                  key={`${word}-${i}`}
-                  initial={{ opacity: 0.15 }}
-                  animate={isInView ? { opacity: 1 } : { opacity: 0.15 }}
-                  transition={{ duration: 0.3, delay: i * 0.015 }}
-                  className="inline-block"
-                >
-                  {word}{"\u00A0"}
-                </motion.span>
-              ))}
-            </blockquote>
+              {quoteText}
+            </motion.blockquote>
 
             <div>
               <p className="text-lg font-semibold text-primary">

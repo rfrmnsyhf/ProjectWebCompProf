@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
 import Container from "@/components/layout/Container";
 import { services } from "@/data/services";
 
 const Services = () => {
   return (
-    <section id="services" className="flex min-h-screen items-center bg-slate-50 py-24">
+    <section id="services" className="flex min-h-screen items-start bg-slate-50 py-24">
       <Container>
         <div className="mb-16 text-center">
           <motion.span
@@ -15,7 +14,7 @@ const Services = () => {
             transition={{ duration: 0.5 }}
             className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-secondary"
           >
-            Product & Service Expertise
+            Shipping Agency & Marine Services
           </motion.span>
           <motion.h2
             initial={{ opacity: 0, y: 10 }}
@@ -25,7 +24,7 @@ const Services = () => {
             className="mb-4 text-3xl font-bold text-primary md:text-4xl lg:text-5xl"
           >
             Solusi Maritime{" "}
-            <span className="text-secondary">Komprehensif</span>
+            <span className="text-secondary">Terintegrasi</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 10 }}
@@ -34,8 +33,7 @@ const Services = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mx-auto max-w-2xl text-lg text-gray"
           >
-            Kompetensi kami dalam berbagai layanan maritim untuk mendukung
-            operasional laut Anda secara menyeluruh.
+            Kami menyediakan layanan keagenan kapal, logistik maritim, dan dukungan operasional yang terintegrasi untuk memastikan setiap kegiatan pelayaran berjalan efisien, aman, dan sesuai regulasi.
           </motion.p>
         </div>
 
@@ -47,7 +45,7 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.05 * index }}
-              className="group relative overflow-hidden rounded-2xl border border-slate-100 bg-white p-8 transition-all hover:border-secondary/20 hover:shadow-lg"
+              className="group relative overflow-hidden rounded-2xl border border-slate-100 bg-white p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
               <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/5 transition-colors group-hover:bg-secondary/10">
                 <service.icon className="h-7 w-7 text-secondary" />
@@ -58,10 +56,6 @@ const Services = () => {
               <p className="mb-6 text-gray leading-relaxed">
                 {service.description}
               </p>
-              <div className="inline-flex items-center gap-2 text-sm font-medium text-secondary transition-all group-hover:gap-3">
-                Selengkapnya
-                <ArrowRight className="h-4 w-4" />
-              </div>
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-secondary to-accent opacity-0 transition-opacity group-hover:opacity-100" />
             </motion.div>
           ))}

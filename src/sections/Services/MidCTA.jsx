@@ -17,15 +17,14 @@ const MidCTA = () => {
         >
           <div className="max-w-xl text-center md:text-left">
             <h3 className="mb-2 text-2xl font-bold text-primary">
-              Butuh Layanan Lainnya?
+              Butuh Dukungan Operasional Kapal?
             </h3>
             <p className="text-muted-foreground">
-              Kami menyediakan layanan kustom sesuai kebutuhan operasional kapal
-              Anda. Hubungi kami untuk konsultasi gratis.
+              Tim CBSA siap membantu kebutuhan keagenan kapal, koordinasi operasional pelabuhan, serta berbagai layanan maritim secara profesional, cepat, dan sesuai regulasi.
             </p>
           </div>
           <a
-            href={`https://wa.me/${company.phoneWhatsApp}?text=Halo%20CBSA%2C%20saya%20ingin%20konsultasi%20tentang%20layanan%20maritim.`}
+            href={`https://wa.me/${company.phoneWhatsApp}?text=Halo%20Tim%20CBSA,%20saya%20ingin%20memperoleh%20informasi%20mengenai%20layanan%20keagenan%20kapal%20yang%20tersedia.`}
             target="_blank"
             rel="noopener noreferrer"
           >

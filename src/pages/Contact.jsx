@@ -9,7 +9,7 @@ const Contact = () => {
     <>
       <PageHero
         title="Kontak Kami"
-        subtitle="Jangan ragu untuk menghubungi kami. Tim kami siap memberikan informasi dan solusi terbaik untuk kebutuhan maritim Anda."
+        subtitle="Kami dengan senang hati siap membantu Anda. Tim kami selalu tersedia untuk memberikan informasi dan solusi terbaik bagi kebutuhan maritim Anda"
         image={contactHero}
       />
       <FAQSection />

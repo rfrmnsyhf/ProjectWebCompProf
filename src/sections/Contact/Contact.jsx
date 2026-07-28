@@ -62,7 +62,7 @@ const Contact = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mx-auto max-w-2xl text-lg text-gray"
           >
-            Jangan ragu untuk menghubungi kami. Tim kami siap memberikan
+            Tim kami siap memberikan
             informasi dan solusi terbaik untuk kebutuhan maritim Anda.
           </motion.p>
         </div>

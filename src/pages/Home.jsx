@@ -5,6 +5,7 @@ import Container from "@/components/layout/Container";
 import { Button } from "@/components/ui/button";
 import { company } from "@/constants/company";
 import aboutImg from "@/assets/images/aboutImg.jpg";
+import heroVideo from "@/assets/videos/LAUT_JAYA.mp4";
 import svc1 from "@/assets/images/home5.jpg";
 import svc2 from "@/assets/images/home6.jpg";
 import svc3 from "@/assets/images/home7.jpg";
@@ -78,14 +79,17 @@ const Home = () => {
         className="relative flex min-h-screen items-center overflow-hidden bg-primary"
       >
         {/* YouTube Video Background */}
-        <div className="absolute inset-0">
-          <iframe
-            src="https://www.youtube.com/embed/DvlIk7SrZHk?autoplay=1&mute=1&loop=1&playlist=DvlIk7SrZHk&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
-            className="absolute left-1/2 top-1/2 h-[120%] w-[120%] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-            title="CBSA Hero Video"
-          />
+        <div className="absolute inset-0 overflow-hidden">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            className="absolute inset-0 h-full w-full object-cover"
+          >
+            <source src={heroVideo} type="video/mp4" />
+          </video>
         </div>
         <div className="absolute inset-0 bg-black/60" />
 
@@ -125,7 +129,7 @@ className="gap-2 bg-cta text-white hover:bg-cta-hover"
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white/30 text-white hover:bg-white/10 hover:text-white"
+                  className="border-white/30 text-black hover:bg-black/10 hover:text-white"
                 >
                   Lihat Layanan
                 </Button>
@@ -209,7 +213,7 @@ className="gap-2 bg-cta text-white hover:bg-cta-hover"
                 <img
                   src={aboutImg}
                   alt="Kapal di pelabuhan Batam"
-                  className="aspect-[4/3] w-full object-cover"
+                  className="aspect-4/3 w-full object-cover"
                 />
               </div>
               <div className="absolute -bottom-6 -right-4 rounded-2xl bg-cta px-6 py-4 text-white shadow-lg md:right-6">
@@ -297,7 +301,7 @@ className="gap-2 bg-cta text-white hover:bg-cta-hover"
                 transition={{ duration: 0.5, delay: 0.1 * index }}
                 className="group overflow-hidden rounded-2xl border border-slate-100 bg-white transition-all hover:border-secondary/20 hover:shadow-lg"
               >
-                <div className="aspect-[4/3] overflow-hidden">
+                <div className="aspect-4/3 overflow-hidden">
                   <img
                     src={service.image}
                     alt={service.title}
@@ -373,9 +377,7 @@ className="gap-2 bg-cta text-white hover:bg-cta-hover"
               transition={{ duration: 0.6, delay: 0.1 }}
               className="mb-10 text-lg text-slate-300"
             >
-              Dari pengurusan clearance hingga pendampingan operasional —
-              percayakan operasional kapal Anda kepada tim yang sudah
-              berpengalaman di Selat Malaka dan perairan strategis Indonesia.
+              Dengan pengalaman operasional di Batam dan jalur pelayaran strategis Selat Malaka, kami memberikan solusi keagenan kapal yang efisien, responsif, dan dapat diandalkan untuk setiap kebutuhan operasional Anda.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -388,9 +390,14 @@ className="gap-2 bg-cta text-white hover:bg-cta-hover"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button size="lg" className="gap-2">
-                  Hubungi Kami Sekarang
-                  <ArrowRight className="h-4 w-4" />
+                <Button
+                  asChild
+                  className="group rounded-full bg-secondary px-6 py-6 transition-all duration-300 hover:-translate-y-1 hover:bg-secondary/90 hover:shadow-2xl"
+                >
+                  <a href="/contact">
+                    Hubungi Kami Sekarang
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-32" />
+                  </a>
                 </Button>
               </a>
             </motion.div>
